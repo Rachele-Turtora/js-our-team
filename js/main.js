@@ -40,3 +40,11 @@ const team = [
 ]
 
 console.log(team)
+
+// Printing the informations in console
+for (let i = 0; i < team.length; i++){
+    const currentObject = team[i]
+    console.log(currentObject['name']);
+    console.log(currentObject['role']);
+    console.log(currentObject['image']);
+}
