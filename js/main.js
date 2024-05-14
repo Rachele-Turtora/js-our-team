@@ -54,10 +54,10 @@ for (let i = 0; i < team.length; i++){
     const pRole = document.createElement("p");
     pRole.append(role)
 
-    const pImage = document.createElement("p");
-    pImage.append(image)
+    const Image = document.createElement("img");
+    Image.setAttribute("src", "./img/"+ image)
 
     container.append(pName)
     container.append(pRole)
-    container.append(pImage)
+    container.append(Image)
 }

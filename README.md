@@ -18,9 +18,10 @@ Stampare le stesse informazioni su DOM sottoforma di stringhe.
     - appendo nome, ruolo e stringa della foto agli elementi p
     - appendo gli elementi p al div
 
-
 BONUS 1:
 Trasformare la stringa foto in una immagine effettiva.
+- cambio p con img 
+- setto l'attributo src con la stringa della foto
 
 BONUS 2:
 Organizzare i singoli membri in card/schede.
