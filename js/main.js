@@ -40,24 +40,36 @@ const team = [
 ]
 
 // Printing the informations in DOM
-const container = document.querySelector(".container");
+const row = document.querySelector(".row");
 
 for (let i = 0; i < team.length; i++){
+
+    const div = document.createElement("div");
+    div.classList.add("col-4");
+
+    const content = document.createElement("div");
+    content.classList.add("content");
+
     const currentObject = team[i];
     const name = currentObject['name'];
     const role = currentObject['role'];
     const image = currentObject['image'];
 
     const pName = document.createElement("p");
-    pName.append(name)
+    pName.classList.add("name");
+    pName.append(name);
 
     const pRole = document.createElement("p");
-    pRole.append(role)
+    pRole.append(role);
 
-    const Image = document.createElement("img");
-    Image.setAttribute("src", "./img/"+ image)
+    const iImage = document.createElement("img");
+    iImage.setAttribute("src", "./img/"+ image);
+    iImage.classList.add("img");
 
-    container.append(pName)
-    container.append(pRole)
-    container.append(Image)
+    content.append(iImage);
+    content.append(pName);
+    content.append(pRole);
+
+    div.append(content);
+    row.append(div);
 }

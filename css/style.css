@@ -3,3 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* LAYOUT CLASSES */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: calc(100% / 3);
+}
+
+/*******************/
+
+
+body{
+    background-color: rgb(252, 246, 238);
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.subtitle{
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.content{
+    margin: 15px;
+    background-color: white;
+}
+
+.img{
+    width: 100%;
+}
+
+.name{
+    padding: 10px;
+    font-size: 30px;
+}
