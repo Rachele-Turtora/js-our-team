@@ -6,9 +6,18 @@ Creare l’array di oggetti con le informazioni fornite.
 
 MILESTONE 1:
 Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto.
+- ciclo l'array team
+    - stampo nome, ruolo e stringa della foto
 
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe.
+- prendo un div a cui appendere le informazioni
+- ciclo l'array team
+    - prendo nome, ruolo e stringa della foto
+    - creo elementi p per nome, ruolo e stringa della foto
+    - appendo nome, ruolo e stringa della foto agli elementi p
+    - appendo gli elementi p al div
+
 
 BONUS 1:
 Trasformare la stringa foto in una immagine effettiva.

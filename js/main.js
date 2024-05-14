@@ -39,12 +39,25 @@ const team = [
     }
 ]
 
-console.log(team)
+// Printing the informations in DOM
+const container = document.querySelector(".container");
 
-// Printing the informations in console
 for (let i = 0; i < team.length; i++){
-    const currentObject = team[i]
-    console.log(currentObject['name']);
-    console.log(currentObject['role']);
-    console.log(currentObject['image']);
+    const currentObject = team[i];
+    const name = currentObject['name'];
+    const role = currentObject['role'];
+    const image = currentObject['image'];
+
+    const pName = document.createElement("p");
+    pName.append(name)
+
+    const pRole = document.createElement("p");
+    pRole.append(role)
+
+    const pImage = document.createElement("p");
+    pImage.append(image)
+
+    container.append(pName)
+    container.append(pRole)
+    container.append(pImage)
 }
