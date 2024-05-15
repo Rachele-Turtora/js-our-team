@@ -50,10 +50,10 @@ for (let i = 0; i < team.length; i++){
     const content = document.createElement("div");
     content.classList.add("content");
 
-    const currentObject = team[i];
-    const name = currentObject['name'];
-    const role = currentObject['role'];
-    const image = currentObject['image'];
+    const person = team[i];
+    const name = person['name'];
+    const role = person['role'];
+    const image = person['image'];
 
     const pName = document.createElement("p");
     pName.classList.add("name");
@@ -63,7 +63,7 @@ for (let i = 0; i < team.length; i++){
     pRole.append(role);
 
     const iImage = document.createElement("img");
-    iImage.setAttribute("src", "./img/"+ image);
+    iImage.src = "./img/" + image;
     iImage.classList.add("img");
 
     content.append(iImage);
